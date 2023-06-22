@@ -49,10 +49,10 @@ const salin = (btn) => {
 };
 
 const timer = () => {
-    var countDownDate = (new Date(document.getElementById('tampilan-waktu').getAttribute('data-waktu').replace(' ', 'T'))).getTime();
+    //var countDownDate = (new Date(document.getElementById('tampilan-waktu').getAttribute('data-waktu').replace(' ', 'T'))).getTime();
+    var countDownDate = (new Date(document.getElementById('tampilan-waktu').getAttribute('data-waktu'))).getTime();
     var time = undefined;
     var distance = undefined;
-
     time = setInterval(() => {
         distance = countDownDate - (new Date()).getTime();
 
